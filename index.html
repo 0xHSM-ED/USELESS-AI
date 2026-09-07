@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Useless AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button id="theme-toggle" class="icon-btn theme-btn" aria-label="toggle theme"></button>
+
+  <!-- ============ START SCREEN ============ -->
+  <section id="screen-start" class="screen active">
+    <div class="boot">
+      <p class="boot-line" style="--d:0s">booting useless_ai kernel<span class="dots"></span></p>
+      <p class="boot-line" style="--d:.45s">loading zero (0) useful skills... done</p>
+      <p class="boot-line" style="--d:.9s">calibrating uselessness.......... 100%</p>
+      <p class="boot-line" style="--d:1.35s">ready.</p>
+    </div>
+
+    <div class="title-block boot-line" style="--d:1.7s">
+      <h1>USELESS<span class="accent">_AI</span></h1>
+      <p class="subtitle">answers your questions. badly. on purpose.</p>
+    </div>
+
+    <button id="start-btn" class="start-btn boot-line" style="--d:2s">
+      <span class="prompt">&gt;</span> start<span class="cursor"></span>
+    </button>
+  </section>
+
+  <!-- ============ CHAT SCREEN ============ -->
+  <section id="screen-chat" class="screen">
+    <header class="chat-header">
+      <button id="back-btn" class="icon-btn" aria-label="back">&#xf060;</button>
+      <span class="brand">&#xf120;&nbsp;useless_ai <span class="ver">v0.1</span></span>
+      <span class="status"><span class="status-dot"></span>online, unfortunately</span>
+    </header>
+
+    <div id="chat" class="chat-log">
+      <div class="msg msg-ai">
+        <span class="msg-prefix">ai $</span>
+        <span class="msg-text">state your business. i probably can't help.</span>
+      </div>
+    </div>
+
+    <div class="input-dock">
+      <input id="message" type="text" placeholder="type something pointless..." autocomplete="off">
+      <button id="send-btn" class="icon-btn send-btn" aria-label="send">&#xf1d8;</button>
+    </div>
+  </section>
+
+<script src="script.js"></script>
+</body>
+</html>
